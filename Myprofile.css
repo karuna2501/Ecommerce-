@@ -1,0 +1,42 @@
+.ProfileContainer{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+
+    .userMenus{
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+    }
+    .userMobileNumber{
+        margin: 10px;
+    }
+    button{
+        margin: 10px;
+        width: 10dvw;
+        padding: 10px;
+        border: 1px solid #ffe700;
+        color: green;
+        background: transparent;
+        transition: .3s;
+        font-size: medium;
+        font-weight: 500;
+        
+        &:hover{
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+            box-shadow:0px 0px 7px black;
+            text-shadow:0px 0px 20px white;
+            color:gold;
+            background:green;
+        }
+    }
+    .userProfileIcon{
+        color: #d7fcda;
+        background: #e6c767;
+        border-radius: 50%;
+        height: 200px;
+        width:200px;
+        box-shadow: 1px 1px 20px #e6c767;
+    }
+}

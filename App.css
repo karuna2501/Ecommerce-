@@ -1,0 +1,9 @@
+.slider1{
+    width: 100dvw;
+    height: auto;
+    img{
+        width: 65%;
+        height: 50dvh;
+        margin: 1%;
+    }
+}

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sideBarBg{
+    background: black;
+    opacity: 0.5;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.sideBar{
+    z-index: 1;
+    width: auto;
+    height: 100dvh;
+    left: 0;
+    background-color: rgb(9, 187, 9);
+    color: white;
+    position: absolute;
+    flex-direction: row;
+    border-radius: 0px 10px 10px 0px;
+
+    ul{
+        display: inline;
+
+        Link,li{
+            text-decoration: none;
+            padding: 20px 20px 20px 10px;
+            color: white;
+            text-decoration-line: none;
+        }
+        Link:hover,li:hover{
+            background-color: black;
+            color: aqua;
+        }
+        
+        Link{
+            text-decoration: none;
+        }
+    }
+}
+
+.card-container{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+    
+    .card{
+        margin: 10px;
+        width: 300px;
+        height: 300px;
+        border:1px solid black;
+        border-radius: 20px;
+        background: linear-gradient(to top,green,yellow);
+        box-shadow: 2px 7px 9px gray;
+        transition: .5s;
+        border: 1px solid yellowgreen;
+        position: relative;
+        display: flex;
+
+        &:hover{
+            box-shadow: 5px 10px 10px black;
+            filter: brightness(105%);
+        }
+    }
+    .productSpec{
+        
+        z-index: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px;
+        background-color: black;
+    }
+    h4{
+        width: max-content;
+        z-index: 1;
+        display: inline;
+        color: white;
+
+    }
+    img{
+        border-radius: 20px 20px 0px 0px ;
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    .eyeIcon{
+        color: green;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 30%;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        &:hover{
+            color: yellow;
+            background-color: green;
+        }
+    }
+    .heartIcon{
+        color: green;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        border-radius: 30%;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+
+        &:hover{
+            color: yellow;
+            background-color: green;
+        }
+        
+    }
+    .summerCard{
+        background: linear-gradient(135deg,white,#ffc7c7,#ffc7c7);
+        border: 2px solid #ff9494;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: 20px;
+        transition: .5s;
+        box-shadow: 2px 5px 8px gray;
+
+        &:hover{
+            box-shadow: 5px 10px 10px black;
+        }
+    }
+    .summerCard{
+        background: linear-gradient(135deg,white,#ffacac,#ffacac);
+        border: 2px solid #ff9494;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: 20px;
+        transition: .5s;
+        box-shadow: 2px 5px 8px gray;
+
+        &:hover{
+            box-shadow: 5px 10px 10px black;
+        }
+    }
+    .winterCard{
+        background: linear-gradient(135deg,white,#bfa2db,#bfa2db);
+        border: 2px solid #be9fe1;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: 20px;
+        transition: .5s;
+        box-shadow: 2px 5px 8px gray;
+
+        &:hover{
+            box-shadow: 5px 10px 10px black;
+        }
+    }
+}

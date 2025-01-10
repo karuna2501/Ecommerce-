@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginForm{
+    z-index: 1;
+    display: grid;
+    position: relative;
+    width: 20%;
+    margin-top: 7%;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    border: 1px solid yellowgreen;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 0px 20px yellowgreen;
+    filter: brightness(110%);
+    
+    h1{
+        color:green;
+        font-size: 50px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        text-shadow: 0px 0px 10px yellow;
+    }
+    input{
+        backdrop-filter: blur(50%);
+        border: none;
+        /* border-bottom: 1px solid white; */
+        padding: 10px;
+        font-size: 15px;
+        margin: 10px;
+        border-radius: 10px;
+        color: aqua;
+        transition: 1s;
+        text-align: center;
+        box-shadow: 0px 0px 5px aqua;
+        -moz-appearance: textfield;
+        background-color: transparent;
+        backdrop-filter: blur(100%);
+
+       /*  &::placeholder{
+            color: gra;
+        } */
+        
+        &:focus{
+            background-color: lightgray;
+            color: black;
+            text-align: center;
+            box-shadow: 0px 0px 10px lightgray;
+        }
+    }
+    input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    p{
+        height: 10px;
+        font-size: large;
+        display: flex;
+        justify-content: start;
+        margin: 10px;
+        color: darkgreen;
+    }
+}
+.otpButton{
+    float: left;
+    color: blue;
+    border: none;
+    background: transparent;
+    clear: both;
+    width: fit-content;
+    text-decoration: underline;
+    font-style: italic;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+.loginSubmit{
+    width: 90%;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(6, 6, 158);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 1s;
+
+    &:hover{
+        cursor: pointer;
+        background-color: black;
+        color: aqua;
+        box-shadow: 0px 0px 10px aqua;
+    }
+}
